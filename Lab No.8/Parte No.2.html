@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Código de caracteres que aceptará la página-->
+    <meta charset="UTF-8">
+    <!-- Permitirá controlar el tamaño de la página-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Llamamos a nuestra hoja de estilos de CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Llamamos a la hoja de estilo proporcionada por bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!--Título de nuestra página-->
+    <title>Lab 8 No.2</title>
+</head>
+<body>
+     <!--Form principal donde agruparemos nuestros elementos-->
+    <form>
+        <!--Creamos un div llamado form-group, una manera más
+        fácil de agrupar labels, textbox, controls, y propocionar de
+        manera automática margenes y orden a los elementos que están dentro de el -->
+        <div class="form-group">
+            <label for="texto_nombre">Etiqueta básica</label>
+            <input type="text" class="form-control" id="texto_nombre" placeholder="Ha esto se le llama etiqueta básica">
+        </div>
+        <div class="form-group">
+            <label for="texto_grande">Redacte su mensaje:</label>
+            <textarea class="form-control" id="texto_grande" rows="3"placeholder="Coloque el mensaje que desea enviar: "></textarea>
+        </div>
+        <!-- Con esta etiqueta agruparemos elementos similares en un mismo lugar-->
+        <fieldset class="form-group">
+            <div class="row">
+                <!-- El Radio permitirá darle al usuario la facilidad de
+                elegir una opción entre varias que existan-->
+                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+                <div class="col-sm-10">
+                    <!--Creamos un div por cada radio -->
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                            checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            #1
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            #2
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                            #3
+                        </label>
+                    </div>
+                </div>
+        </fieldset>
+        <div class="form-group row">
+            <!--El checkbox permite al usuario la posibilidad de 
+                elegir multiples opciones que se le presenten -->            
+            <div class="col-sm-2">CheckBoxs</div>
+            <div class="col-sm-10">
+                <!--Se crea un div por cada checkbox-->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        #1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        #2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                        #3
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!--Creamos un botón, los cuales Bootstrap les proporciona un diseño único
+        para la función que nosotros querramos darle -->
+        <button type="button" class="btn btn-primary btn-lg btn-block">Enviar a destino </button>
+    </form>
+</body>
+</html>
